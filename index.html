@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzCoffee - O'zbek Kofe Do'koni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.webp" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header qismi -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="./img/icon.webp" alt=""> UzCoffee
+            </div>
+            <div class="nav-links">
+                <a href="#home">Bosh sahifa</a>
+                <a href="#products">Mahsulotlar</a>
+                <a href="#about">Biz haqimizda</a>
+                <a href="#contact">Aloqa</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide showing" style="background-image: url('./img/back1.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/back2.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/back3.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/back4.jpg')"></div>
+            <div class="slide" style="background-image: url('./img/back5.jpg')"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>UzCoffee - Eng Sara Qahva</h1>
+            <p>O'zbekistonda eng sifatli va mazali qahvalar</p>
+            <a href="#products" class="btn btn-primary">Mahsulotlarni ko'rish</a>
+        </div>
+    </section>
+
+    <!-- Products section -->
+    <section id="products" class="products">
+        <h2 class="section-title" data-aos="fade-up">Bizning Mahsulotlar</h2>
+        <div class="products-grid">
+            <!-- Kapuchino -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img//coffee1.jpg" alt="Cappuccino" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Kapuchino</h3>
+                    <p class="product-description">Yumshoq ko'pikli, qaymoqli Italian uslubida</p>
+                    <p class="product-price">25,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Kapuchino" data-price="25000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Amerikano -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee2.jpg" alt="Americano" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Amerikano</h3>
+                    <p class="product-description">Klassik qora qahva, yumshoq va yengil</p>
+                    <p class="product-price">20,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Amerikano" data-price="20000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Latte -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee3.jpg" alt="Latte" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Latte</h3>
+                    <p class="product-description">Qaymog'i ko'p, mazali va yoqimli</p>
+                    <p class="product-price">28,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Latte" data-price="28000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Espresso -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee4.jpg" alt="Espresso" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Espresso</h3>
+                    <p class="product-description">Kuchli va to'yimli qahva</p>
+                    <p class="product-price">15,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Espresso" data-price="15000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Moka -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee5.jpg" alt="Mocha" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Moka</h3>
+                    <p class="product-description">Shokoladli qahva</p>
+                    <p class="product-price">30,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Moka" data-price="30000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Turk qahvasi -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee6.jpg" alt="Turkish Coffee" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Turk qahvasi</h3>
+                    <p class="product-description">An'anaviy usulda tayyorlangan qahva</p>
+                    <p class="product-price">22,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Turk qahvasi" data-price="22000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Muzli qahva -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee7.jpg" alt="Iced Coffee" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Muzli qahva</h3>
+                    <p class="product-description">Yozgi salqin ichimlik</p>
+                    <p class="product-price">26,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Muzli qahva" data-price="26000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Karamel Makiato -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee8.jpg" alt="Caramel Macchiato" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Karamel Makiato</h3>
+                    <p class="product-description">Karamelli mazali qahva</p>
+                    <p class="product-price">32,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Karamel Makiato" data-price="32000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Flat White -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee9.jpg" alt="Flat White" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Flat White</h3>
+                    <p class="product-description">Avstraliya uslubidagi qahva</p>
+                    <p class="product-price">27,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Flat White" data-price="27000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Affogato -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee10.jpg" alt="Affogato" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Affogato</h3>
+                    <p class="product-description">Muzqaymoqli espresso</p>
+                    <p class="product-price">35,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Affogato" data-price="35000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Irlandiya qahvasi -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee11.jpg" alt="Irish Coffee" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Irlandiya qahvasi</h3>
+                    <p class="product-description">Maxsus retsept asosida</p>
+                    <p class="product-price">40,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Irlandiya qahvasi"
+                        data-price="40000">Savatchaga qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Qahva Frappe -->
+            <div class="product-card" data-aos="fade-up">
+                <img src="./img/coffee12.jpg" alt="Coffee Frappe" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Qahva Frappe</h3>
+                    <p class="product-description">Muzli va ko'pikli yozgi ichimlik</p>
+                    <p class="product-price">33,000 so'm</p>
+                    <button class="btn btn-primary buy-button" data-name="Qahva Frappe" data-price="33000">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UzCoffee</h3>
+                <p>Eng sifatli qahva mahsulotlari</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100080148282444"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/adikcyber/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/adhambek_by_frontend"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Aloqa</h3>
+                <p>Tel: +998 91 376 99 80</p>
+                <p>Email: adikdasturchi@gmail.com</p>
+                <p>Manzil: Qoraqalpog'iston Respublikasi, Beruniy tumani</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ish vaqti</h3>
+                <p>Dushanba - Juma: 8:00 - 22:00</p>
+                <p>Shanba - Yakshanba: 9:00 - 21:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Savatcha modal -->
+    <div class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-close">&times;</div>
+            <h2>Savatchadagi mahsulotlar</h2>
+            <div class="cart-items">
+                <!-- Savatcha mahsulotlari dinamik ravishda JavaScript orqali qo'shiladi -->
+            </div>
+            <div class="cart-total">
+                Jami: <span class="total-amount">0</span> so'm
+            </div>
+            <div class="cart-buttons">
+                <button class="btn btn-primary clear-cart">Savatni tozalash</button>
+                <button class="btn btn-primary checkout">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification container -->
+    <div id="notification-container"></div>
+
+    <!-- JavaScript files -->
+    <script src="script.js"></script>
+    <script>
+        // AOS initialization
+        AOS.init({
+            duration: 500,
+            once: true
+        });
+
+        // Cart initialization
+        const cart = new ShoppingCart();
+    </script>
+</body>
+
+</html>
